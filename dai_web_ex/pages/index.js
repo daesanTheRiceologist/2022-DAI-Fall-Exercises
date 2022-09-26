@@ -1,13 +1,14 @@
-import { Button } from 'semantic-ui-react'
-import { Loader } from 'semantic-ui-react'
-
+import { Button, Loader } from 'semantic-ui-react'
+import LoginForm from '../comps/LoginForm';
 //the 
 import {useRouter} from 'next/router';
 import {useState} from 'react';
+
 export default function Home() {
   
   const r = useRouter();
   const [loginState, setLoginState] = useState("before")
+  /*
   var button_txt = "login"
   var c = "blue";
 
@@ -38,8 +39,10 @@ export default function Home() {
       r.push("/dashboard");
     }
   }
-/* */
-  const login = async () => {
+  
+  */
+
+  const Login = async () => {
     setLoginState("during");
 
     await new Promise(resolve=>setTimeout(resolve, 2000));

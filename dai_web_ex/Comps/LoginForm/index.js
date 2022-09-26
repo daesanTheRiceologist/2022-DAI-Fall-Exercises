@@ -1,10 +1,11 @@
-import { Loader, Button } from 'semantic-ui-react'
+import { Button, Loader, Input } from 'semantic-ui-react'
 export default function LoginForm({
     loginState="before",
-    onLoginClick()=>{}
+    onLoginClick=()=>{}
 }){
 
     var c = "blue";
+    var button_txt = "Click Me";
 
     if(loginState === "before"){
       c = "blue";
